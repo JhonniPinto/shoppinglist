@@ -21,7 +21,7 @@
     outline: none;
     border-radius: 5px;
     width: 15%;
-    background-color: #ffeaa7;
+    background-color: #81ecec;
     color: #000;
     text-align: center;
     font-size: 0.8rem;
@@ -55,7 +55,7 @@
 }
 .item-form button {
     width: 15%;
-    background-color: #ffeaa7;
+    background-color: #81ecec;
 }
 @media (max-width: 750px) {
     .item-form {
@@ -110,7 +110,7 @@
     margin-bottom: 30px;    
 }
 .item h3 {
-    background-color: #ffeaa7;
+    background-color: #81ecec;
     color: #fff;
     padding: 5px;    
 }
