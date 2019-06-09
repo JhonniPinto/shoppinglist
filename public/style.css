@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@
 .items-title {
     color: #222f3e;
     border-bottom: inset;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;  
 }
 .item {
     margin-bottom: 30px;    
@@ -113,6 +113,7 @@
     background-color: #a5b1c2;
     color: #fff;
     padding: 5px;    
+    border-radius: 5px;
 }
 @media (max-width: 400px) {
     .item li {
