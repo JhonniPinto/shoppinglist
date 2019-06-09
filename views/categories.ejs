@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jhonni's GS list</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Managing categories</h1>
+        <a href="/">Home</a>
+
+    </div>
+    <form method="POST" class="item-form">
+        <input type="text" name="category" placeholder="Add a category" autofocus <% if (category) { %> value="<%- category.category %>" <% } %>>
+        <button>Save cat</button>
+    </form>
+
+    <div class="main">
+        <div class="img-div">
+
+        </div>
+        <div class="div-items">
+            <h2 class="items-title">Listed categories</h2>
+        
+            <div class="item">
+                <ul>
+                    <% categories.forEach(cat => { %>
+                    <li> <%- cat.category %>
+                        <a href="/categories/delete/<%- cat.id %>">Delete</a>
+                        <a href="/categories/update/<%- cat.id %>">Update</a>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

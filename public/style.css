@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #222f3e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 15%;
+    background-color: #ffeaa7;
+    color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+}
+@media (max-width: 750px) {
+    .header a {
+        width: 30%;
+    }
+}
+@media (max-width: 400px) {
+    .header a {
+        font-size: 0.7rem;
+    }
+}
+.item-form {
+    width: 100%;
+    background-color: #0abde3;
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+.item-form input, .item-form select, .item-form button {
+    width: 50%;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.item-form select {
+    width: 25%;
+}
+.item-form button {
+    width: 15%;
+    background-color: #ffeaa7;
+}
+@media (max-width: 750px) {
+    .item-form {
+        flex-direction: column;
+    }
+    .item-form input, .item-form select {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .item-form button {
+        width: 30%;
+    }
+}
+@media (max-width: 400px) {
+    .item-form button {
+        width: 50%;
+    }
+}
+.main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.img-div {
+    width: 40%;
+    height: 500px;
+    background-image: url('img/grocery-bag-2117313_1280.png');
+    background-size: cover;
+}
+.div-items {
+    width: 60%;
+    padding: 5%;
+}
+@media (max-width: 750px) {
+    .main {
+        flex-direction: column;
+    }
+    .img-div {
+        display: none;
+    }
+    .div-items {
+        width: 100%;
+    }
+}
+.items-title {
+    color: #0abde3;
+    border-bottom: inset;
+    margin-bottom: 20px;    
+}
+.item {
+    margin-bottom: 30px;    
+}
+.item h3 {
+    background-color: #ffeaa7;
+    color: #fff;
+    padding: 5px;    
+}
+@media (max-width: 400px) {
+    .item li {
+        font-size: 0.85rem;
+    }
+}

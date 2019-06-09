@@ -1,0 +1,30 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "grocery shopping list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grocery",
+    "shopping",
+    "grocery",
+    "shopping",
+    "list",
+    "list",
+    "lista",
+    "de",
+    "compras",
+    "supermercado",
+    "lista"
+  ],
+  "author": "Jhonni Pinto",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "sqlite": "^3.0.3"
+  }
+}

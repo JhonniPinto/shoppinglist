@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jhonni's GS list</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Shopping list</h1>
+        <a href="/categories">Categories</a>
+
+    </div>
+    <form method="POST" class="item-form">
+        <input type="text" name="item" placeholder="Add an item" autofocus  <% if (slctItem) { %> value="<%- slctItem.item %>" <% } %>>
+        <select name="category">
+            <% categories.forEach(cat => { %>
+            <option value="<%- cat.id %>" name="categoria" <% if (slctItem && cat.id == slctItem.category) { %> selected <% } %> ><%- cat.category %></option>
+            <% }) %>
+        </select>
+        <button>Save item</button>
+    </form>
+
+    <div class="main">
+        <div class="img-div">
+
+        </div>
+        <div class="div-items">
+            <h2 class="items-title">Listed items</h2>
+        
+            <% categories.forEach(cat => { %>
+            <div class="item">
+                <% if (cat.items != '') { %> <h3><%- cat.category %></h3>  <% } %>
+                <ul>
+                    <% cat.items.forEach(item => { %>
+                    <li><%- item.item %> |
+                        <a href="/items/delete/<%- item.id %>">Delete</a>
+                        <a href="/items/update/<%- item.id %>">Update</a>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
