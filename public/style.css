@@ -21,7 +21,7 @@
     outline: none;
     border-radius: 5px;
     width: 15%;
-    background-color: #81ecec;
+    background-color: #a5b1c2;
     color: #000;
     text-align: center;
     font-size: 0.8rem;
@@ -38,7 +38,7 @@
 }
 .item-form {
     width: 100%;
-    background-color: #0abde3;
+    background-color: #778ca3;
     padding: 10px 20px; 
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
 }
 .item-form button {
     width: 15%;
-    background-color: #81ecec;
+    background-color: #a5b1c2;
 }
 @media (max-width: 750px) {
     .item-form {
@@ -102,7 +102,7 @@
     }
 }
 .items-title {
-    color: #0abde3;
+    color: #222f3e;
     border-bottom: inset;
     margin-bottom: 20px;    
 }
@@ -110,7 +110,7 @@
     margin-bottom: 30px;    
 }
 .item h3 {
-    background-color: #81ecec;
+    background-color: #a5b1c2;
     color: #fff;
     padding: 5px;    
 }
